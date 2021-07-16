@@ -12,7 +12,7 @@ Features
 - APU channels (2 square, triangle, noise, DMC)
 - Battery backed RAM save to SRAM
 - iNES mappers #s 0,1,2,3,4,7,9,10,30,31,71
-- Controller 1 (D-pad + analog)
+- controllers 1 and 2 (D-pad + analog)
 
 There's a lot missing, but it's already worlds better than 1.2.
 
@@ -93,7 +93,7 @@ On most games only around 50% of frame time is used.
 Version history
 ---------------
 
-2020-?? -
+2021-07-15 - beta 4
   - Detect controllers, support controller 2
 
 2020-07-27 - beta 3
