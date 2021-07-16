@@ -1,0 +1,26 @@
+version: 2.{build}
+
+shallow_clone: true
+
+image: Visual Studio 2017
+
+environment:
+  makefile_location: "."
+  makefile_name: makefile
+  target_name: neon64v2
+
+configuration:
+  - release
+
+platform:
+  - windows_msvc2017_desktop_x64
+
+init:
+  - set Path=C:\msys64\usr\bin;%Path%
+
+build_script:
+  - cd %makefile_location%
+  - make -f %makefile_name% platform=%platform%
+
+artifacts:
+  - path: '**\%target_name%*.bin'
