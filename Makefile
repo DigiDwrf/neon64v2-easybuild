@@ -1,5 +1,6 @@
 .PHONY: all loader pkg clean clean-tools clean-all
 
+CC=gcc
 TOOLS=tools/chksum64 tools/bass
 
 # Path relative to src/
